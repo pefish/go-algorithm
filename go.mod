@@ -1,3 +1,3 @@
 module github.com/pefish/go-algorithm
 
-go 1.13
+go 1.14
