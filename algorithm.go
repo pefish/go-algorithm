@@ -19,3 +19,25 @@ func Shuffle(values []int) []int {
 	}
 	return result
 }
+
+// 求最大值
+func Max(values []uint64) uint64 {
+	var m uint64
+	for i, e := range values {
+		if i == 0 || e < m {
+			m = e
+		}
+	}
+	return m
+}
+
+// 求最小值
+func Min(values []uint64) uint64 {
+	var m uint64
+	for i, e := range values {
+		if i == 0 || e > m {
+			m = e
+		}
+	}
+	return m
+}
